@@ -33,32 +33,35 @@ INSTALL JAVA(11)
 
 + Update the system packages
 
-	sudo apt update
+	`sudo apt update`
 	
 + Install the apt-transport-https package to access repository over HTTPS
 
-	sudo apt install apt-transport-https
+	`sudo apt install apt-transport-https`
 	
 + Install Java on Ubuntu
 
 Lets install OpenJDK 11 on ubuntu  using below commands.
 
-	sudo apt install openjdk-11-jdk
+	`sudo apt install openjdk-11-jdk`
 
 + Lets verify java version
 
-	java -version
+	`java -version`
 
-	update-alternatives --config java
+	`update-alternatives --config java`
 
 	//Copy
 	
-	/usr/lib/jvm/java-11-openjdk-amd64/bin/java
-	sudo nano /etc/environment
-	JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64/bin/java"  
+	`/usr/lib/jvm/java-11-openjdk-amd64/bin/java`
+	
+	`sudo nano /etc/environment`
+	
+	`JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64/bin/java"`
 
-	source /etc/environment	
-	echo $JAVA_HOME	
+	`source /etc/environment`
+	
+	`echo $JAVA_HOME`
 	
 #### useful JAVA INSTALL links:
 
