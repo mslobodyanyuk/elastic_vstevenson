@@ -52,6 +52,7 @@ Lets install OpenJDK 11 on ubuntu  using below commands.
 	update-alternatives --config java
 
 	//Copy
+	
 	/usr/lib/jvm/java-11-openjdk-amd64/bin/java
 	sudo nano /etc/environment
 	JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64/bin/java"  
@@ -86,7 +87,8 @@ OR:
 	cd /opt/es
 	./bin/elasticsearch
 	
-_- DOES NOT START !!! _
+_- DOES NOT START !!!_
+
 _- gave an ERROR - added `'bin/java'` again to the path in $HOME_JAVA( `sudo nano/etc/environment`). - REMOVED `'bin/java'` from the path to $HOME_JAVA and STARTED._	
 				
 	source /etc/environment
@@ -98,26 +100,27 @@ _- gave an ERROR - added `'bin/java'` again to the path in $HOME_JAVA( `sudo nan
 
 + or in the Terminal:	
 
-	curl -X GET "localhost:9200"	
+	`curl -X GET "localhost:9200"`
 
 * ***Actions on the deployment of the project:***
 
 - Making a new project elastic_codecourse.loc:
-																		
-	sudo chmod -R 777 /var/www/Elasticsearch/elastic_vstevenson.loc
+                                                                                                                  
+	`sudo chmod -R 777 /var/www/Elasticsearch/elastic_vstevenson.loc`
 
 	//!!!! .conf
-	sudo cp /etc/apache2/sites-available/test.loc.conf /etc/apache2/sites-available/elastic_vstevenson.loc.conf
+	
+	`sudo cp /etc/apache2/sites-available/test.loc.conf /etc/apache2/sites-available/elastic_vstevenson.loc.conf`
 			
-	sudo nano /etc/apache2/sites-available/elastic_vstevenson.loc.conf
+	`sudo nano /etc/apache2/sites-available/elastic_vstevenson.loc.conf`
 
-	sudo a2ensite elastic_vstevenson.loc.conf
+	`sudo a2ensite elastic_vstevenson.loc.conf`
 
-	sudo systemctl restart apache2
+	`sudo systemctl restart apache2`
 
-	sudo nano /etc/hosts
+	`sudo nano /etc/hosts`
 
-	cd /var/www/Elasticsearch/elastic_vstevenson.loc
+	`cd /var/www/Elasticsearch/elastic_vstevenson.loc`
 	
 - Deploy project:
 
@@ -131,7 +134,7 @@ _- gave an ERROR - added `'bin/java'` again to the path in $HOME_JAVA( `sudo nan
 
 <https://www.fosstechnix.com/install-elasticsearch-on-ubuntu/>
 											
-- For install ElasticSearch PHP Client follow the tutorial:	
+For install ElasticSearch PHP Client follow the tutorial:	
 
 ---
 
