@@ -43,7 +43,7 @@ INSTALL JAVA(11)
 
 Lets install OpenJDK 11 on ubuntu  using below commands.
 
-	`sudo apt install openjdk-11-jdk`
+	sudo apt install openjdk-11-jdk
 
 + Lets verify java version
 
